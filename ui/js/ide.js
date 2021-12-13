@@ -18,7 +18,7 @@ function executeCode() {
     console.log("hello")
     $.ajax({
 
-        url: "http://127.0.0.1:8000/ide",
+        url: "http://54.180.2.91:8000/ide",
 
         method: "POST",
         
