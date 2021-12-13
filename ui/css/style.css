@@ -42,6 +42,7 @@
     min-height: 100px;
     width: 99%;
     resize: none;
+    white-space: pre-line;
 
 }
 .ace_print-margin {
