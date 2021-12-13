@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brython Test</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython.min.js"> </script> 
+  <script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython_stdlib.js"> </script>
+
+</head>
+<body onload="brython()">
+  <script type="text/python">
+
+    from browser import document, window 
+    import traceback
+
+    def run(event): 
+        try: 
+            result = eval("'sssss'")
+            document['error_message_textarea'].value=result 
+        except Exception:
+            error_message=traceback.format_exc()
+            document['error_message_textarea'].value=error_message
+    
+    document['run'].bind('click',run)
+    </script>
+    
+    <input id='code' value='print("OK")'></input>
+    <button id='run'>
+        RUN
+    </button>
+    <br>
+    <textarea id='error_message_textarea' style='color:red;width: 300px; height: 300px;'></textarea>
+    
+</body>
+</html>

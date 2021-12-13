@@ -1,6 +1,5 @@
-from django.urls import path
+from django.urls import path, include
 
-from ui import ide
 urlpatterns = [
-        path("", ui.ide)
+    path("ide", include('ide.urls'))
 ]

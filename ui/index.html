@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Online IDE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="header"> Test Online IDE </div>
+  
+    <div class="control-panel">
+      Select Language:
+      &nbsp; &nbsp;
+      <select id="languages" class="languages" onchange="changeLanguage()">
+        <option value="python"> Python</option>
+        <option value="javascript"> Javascript</option>
+      </select>
+    </div>
+    
+    <div class="button-container">
+      <button class="btn" onclick="executeCode()"> Run </button>
+    </div>
+
+    <div class="editor" id="editor"></div>
+    
+
+    <div class="output"></div>
+  </div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/lib/ace.js"></script>
+  <script src="js/lib/theme-solarized_dark.js"></script>
+  <script src="js/ide.js"></script>
+  
+</body>
+</html>
