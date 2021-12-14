@@ -1,15 +1,25 @@
 *{margin: 0;}
 
 .header {
-    background: #57a958;
+    background: black;
     text-align: left;
     font-size: 20px;
     font-weight: bold;
     color: white;
     padding: 4px;
     font-family: sans-serif;
+    text-align: right;
+    display: flex;
 }
 
+#logo {
+    height: 20px;
+    flex: 1;
+}
+
+#title {
+    flex: 1;
+}
 .control-panel {
     background: lightgray;
     text-align: right;
@@ -30,7 +40,7 @@
 }
 
 .btn {
-    background: #57a958;
+    background: black;
     color: white;
     padding: 8px;
     border: 0;
@@ -47,4 +57,23 @@
 }
 .ace_print-margin {
     display: none;
+}
+#main {
+    width: 100%;
+    display: flex;
+
+}
+#markdown {
+    width: 100%;
+    background-color: white;
+    flex: 1;
+    border: 2px solid black;
+}
+
+#ide {
+    flex: 1;
+}
+
+#editor {
+    height: 700px;
 }
